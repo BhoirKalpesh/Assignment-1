@@ -19,6 +19,14 @@ button{
     border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    height: auto;
+    width: auto;
+    padding: 20px;
+  }
+}
+
 
 
 
