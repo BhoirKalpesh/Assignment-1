@@ -78,8 +78,11 @@ function Home() {
     setIsActive(false);
     setSeconds(0);
     setProgress(0);
-    setIsWorkSession(true);
-    setMinutes(25);
+    if(isWorkSession){
+      setMinutes(25);
+    }else{
+      setMinutes(5);
+    }
   };
 
   const formatTime = (time) => {
