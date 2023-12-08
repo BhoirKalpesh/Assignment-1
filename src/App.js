@@ -26,7 +26,7 @@ function App() {
     <div>
       {isLoading && (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <CircularProgress isIndeterminate color='green.300' size='xl'/>
+        <CircularProgress isIndeterminate color='green.300' size='120px'/>
         </div>
       )}
       { !isLoading && isAuthenticated ? (
