@@ -9,8 +9,7 @@ function Home() {
   const [seconds, setSeconds] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isWorkSession, setIsWorkSession] = useState(true); 
-
-
+  
   const handleWorkSessionClick = () => {
     
     if (!isWorkSession) {
@@ -44,8 +43,7 @@ function Home() {
             clearInterval(interval);
             setProgress(0);
             setIsActive(false);
-
-           
+            
             setIsWorkSession((prevIsWorkSession) => !prevIsWorkSession);
             setMinutes(isWorkSession ? 5 : 25);
           } else {
